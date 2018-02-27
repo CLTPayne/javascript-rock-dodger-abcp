@@ -146,9 +146,9 @@ function moveDodger(e) {
 
 function moveDodgerLeft() {
   window.requestAnimationFrame(function() {
-     var D
+     var dodgerLeft = DODGER.style.left = `${top += 4px}`
   function move() {
-    DODGER.style.left = `${top += 4px}`
+  
     if (top < 400)
     var leftNumbers = dodger.style.left.replace('px', '')
     var left = parseInt(leftNumbers, 10)
