@@ -145,11 +145,13 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  window.requestAnimationFrame()
-  var top = 0 
+  window.requestAnimationFrame(function() {
+     var top = 0 
   function move() {
     DODGER.style.top = `${top += 4px}`
     if (top < 400)
+  })
+ 
   }
  
 }
