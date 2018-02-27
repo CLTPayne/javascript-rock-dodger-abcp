@@ -125,17 +125,17 @@ function endGame() {
 }
 
 function moveDodger(e) {
-  if (e.which === LEFT_ARROW) {
+  if (e.which !== LEFT-ARROW && e.which !== RIGHT_ARROW) {
     e.stopPropagation();
     e.preventDefault();
+}
+  if (e.which === LEFT_ARROW) {
     return moveDodgerLeft()
     }
   if (e.which === RIGHT_ARROW); {
     e.stopPropagation();
     e.preventDefault();
     return moveDodgerRight()}
-  if (e.which !== LEFT-ARROW && RIGHT_ARROW) {
-    return
   }
   // implement me!
   /**
