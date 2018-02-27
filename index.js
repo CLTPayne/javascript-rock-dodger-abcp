@@ -126,9 +126,15 @@ function endGame() {
 
 function moveDodger(e) {
   document.addEventListener('keydown', function(e) {
-  if (e.which === LEFT_ARROW) {return moveDodgerLeft()
+  if (e.which === LEFT_ARROW) {
+    e.stopPropogation();
+    e.preventDefault();
+    return moveDodgerLeft()
     }
-  else (e.which === RIGHT_ARROW); {return moveDodgerRight()}}
+  else (e.which === RIGHT_ARROW); {
+    e.preventDefault()
+    return moveDodgerRight()}
+  }
 )
 
 
