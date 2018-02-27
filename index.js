@@ -120,6 +120,7 @@ window.requestAnimationFrame(moveRock)
 function endGame() {
   clearInterval(gameInterval)
   rock.remove() 
+  alert("YOU LOSE!")
 }
 
 function moveDodger(e) {
