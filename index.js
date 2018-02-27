@@ -149,7 +149,6 @@ function moveDodgerLeft() {
      var dodgerLeft = positionToInteger(DODGER.style.left)
      if (dodgerLeft > 0) {
        DODGER.style.left = `${dodgerLeft -= 4}px`
-       
      }
     })
   // implement me!
@@ -160,6 +159,13 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
+  window.requestAnimationFrame(function() {
+     var dodgerRight = positionToInteger(DODGER.style.right)
+     if (dodgerRight > 0) {
+       DODGER.style.right = `${dodgerRight -= 4}px`
+       
+     }
+    })
   // implement me!
   /**
    * This function should move DODGER to the right
