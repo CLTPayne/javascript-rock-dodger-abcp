@@ -126,12 +126,12 @@ function endGame() {
 
 function moveDodger(e) {
   if (e.which === LEFT_ARROW) {
-    e.stopPropogation();
+    e.stopPropagation();
     e.preventDefault();
     return moveDodgerLeft()
     }
   else (e.which === RIGHT_ARROW); {
-    e.stopPropogation();
+    e.stopPropagation();
     e.preventDefault();
     return moveDodgerRight()}
 
