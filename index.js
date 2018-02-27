@@ -94,7 +94,7 @@ function createRock(x) {
        window.requestAnimationFrame(moveRock)
      }
      
-    else rock.remove() }
+    else {rock.remove() }
     /**
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
