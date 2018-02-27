@@ -146,7 +146,7 @@ function moveDodger(e) {
 
 function moveDodgerLeft() {
   window.requestAnimationFrame(function() {
-     var top = 0 
+     var D
   function move() {
     DODGER.style.left = `${top += 4px}`
     if (top < 400)
