@@ -118,6 +118,7 @@ window.requestAnimationFrame(moveRock)
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
+  rock.remove() 
 }
 
 function moveDodger(e) {
