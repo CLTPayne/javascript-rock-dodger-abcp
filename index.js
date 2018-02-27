@@ -160,9 +160,9 @@ function moveDodgerLeft() {
 
 function moveDodgerRight() {
   window.requestAnimationFrame(function() {
-     var dodgerRight = positionToInteger(DODGER.style.right)
+     var dodgerRight = positionToInteger(DODGER.style.left)
      if (dodgerRight < 360) {
-       DODGER.style.right = `${dodgerRight += 4}px`
+       DODGER.style.left = `${dodgerRight += 4}px`
      }
     })
   // implement me!
