@@ -145,10 +145,12 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  var leftNumbers = DODGER.style.left.replace('px', '')
-    var left = parseInt(leftNumbers, 10)
-
-    DODGER.style.left = `${left - 4}px`
+  var top = 0 
+  function move() {
+    DODGER.style.GAME_HEIGHT = `${top += 4px}`
+    if (GAME_HEIGHT < 400)
+  }
+  window.requestAnimationFrame()
   // implement me!
   /**
    * This function should move DODGER to the left
