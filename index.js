@@ -134,10 +134,6 @@ function moveDodger(e) {
     e.stopPropagation();
     e.preventDefault();
     return moveDodgerRight()}
-
-
-
-
   // implement me!
   /**
    * This function should call `moveDodgerLeft()`
