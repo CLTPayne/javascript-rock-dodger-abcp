@@ -151,8 +151,7 @@ function moveDodgerLeft() {
        DODGER.style.left = `${dodgerLeft -= 4}px`
        
      }
-    )
-  }
+    })
   // implement me!
   /**
    * This function should move DODGER to the left
